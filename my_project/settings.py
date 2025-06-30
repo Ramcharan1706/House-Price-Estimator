@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-7x84=#t(6oy9ple3(ekoo9q(-0g7&)0h#tda205um+caw*$=$b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['house-price-estimator-nux2.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'my_project.urls'
